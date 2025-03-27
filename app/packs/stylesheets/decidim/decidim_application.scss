@@ -8,6 +8,33 @@
 // By default this is empty.
 
 
+/*custom colors RoadSTEAMer*/
+
+@font-face {
+  font-family: 'Liber';
+  src: url(/app/views/static/api/docs/assets/webfonts/LiberGrotesqueFamily-SemiBold.ttf) format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+*{
+  font-family: 'Liber' !important;
+}
+
+
+
+.main-bar__search {
+  #form-search_topbar {
+    border:2px solid #D04D9C ;
+    color:#d04d9c ;
+    background-color:black ;
+  }
+  button {
+    svg {
+      fill: #d04d9c;
+    }
+  }
+}
+
 
 h1 {
   font-weight: 500;
