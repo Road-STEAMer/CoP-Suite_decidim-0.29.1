@@ -1,5 +1,5 @@
 GIT
-  remote: https://github.com/DanieleNoto/decidim-module-iframe.git
+  remote: https://github.com/URBREATH/decidim-module-iframe.git
   revision: e307dcc4d9550673065b53f5240e3b7636041bf4
   specs:
     decidim-iframe (0.29.1)
@@ -7,14 +7,36 @@ GIT
       decidim-core (= 0.29.1)
 
 GIT
-  remote: https://github.com/DanieleNoto/decidim-module-keycloak.git
-  revision: a8683afe3a7570925e4d3c802b369c4a34162208
-  branch: main
+  remote: https://github.com/URBREATH/decidim-module-keycloak.git
+  revision: 20a2533fd311fd3148ab829069c8ce86c9b7fd28
   specs:
-    decidim-keycloak (0.1.0)
-      decidim (~> 0.29.1)
-      decidim-core (>= 0.25.0, <= 0.29.1)
+    decidim-keycloak (0.1.1)
+      decidim-core (>= 0.27.0, < 0.30)
       omniauth-keycloak (~> 1.5)
+
+GIT
+  remote: https://github.com/URBREATH/decidim-module-nbs_stories.git
+  revision: 857cea2b62ab07d8b10d1dea4b737ff6eb0391dc
+  specs:
+    decidim-nbs (0.29.1)
+      decidim-admin (= 0.29.1)
+      decidim-comments (= 0.29.1)
+      decidim-core (= 0.29.1)
+
+GIT
+  remote: https://github.com/URBREATH/decidim-module-whiteboard.git
+  revision: 593060fad0d24539c4ebb142a20696eadf832c08
+  specs:
+    decidim-whiteboard (0.29.1)
+      decidim-admin (= 0.29.1)
+      decidim-comments (= 0.29.1)
+      decidim-core (= 0.29.1)
+
+PATH
+  remote: ../decidim-module-idra
+  specs:
+    decidim-idra (0.29.1)
+      decidim-core (= 0.29.1)
 
 GEM
   remote: https://rubygems.org/
@@ -104,7 +126,7 @@ GEM
       parser (>= 2.4)
       smart_properties
     bigdecimal (3.1.6)
-    bindata (2.5.0)
+    bindata (2.5.1)
     bindex (0.8.1)
     bootsnap (1.10.3)
       msgpack (~> 1.2)
@@ -521,7 +543,7 @@ GEM
       oauth2 (~> 2.0.6)
       omniauth (~> 2.0)
       omniauth-oauth2 (~> 1.8.0)
-    omniauth-keycloak (1.5.2)
+    omniauth-keycloak (1.5.3)
       faraday
       json-jwt (> 1.13.0)
       omniauth (>= 2.0)
@@ -797,8 +819,11 @@ DEPENDENCIES
   byebug (~> 11.0)
   decidim (= 0.29.1)
   decidim-dev (= 0.29.1)
+  decidim-idra!
   decidim-iframe!
   decidim-keycloak!
+  decidim-nbs!
+  decidim-whiteboard!
   letter_opener_web (~> 2.0)
   listen (~> 3.1)
   net-imap (~> 0.2.3)

@@ -18,9 +18,17 @@ gem "wicked_pdf", "~> 2.1"
 
 gem "truncate_html"
 
-gem "decidim-keycloak", git: "https://github.com/DanieleNoto/decidim-module-keycloak.git", branch: "main"
+gem "decidim-keycloak", git: "https://github.com/URBREATH/decidim-module-keycloak.git"
 
-gem "decidim-iframe", git: "https://github.com/DanieleNoto/decidim-module-iframe.git"
+gem "decidim-iframe", git: "https://github.com/URBREATH/decidim-module-iframe.git"
+
+gem "decidim-nbs", git: "https://github.com/URBREATH/decidim-module-nbs_stories.git"
+
+gem "decidim-whiteboard", git: "https://github.com/URBREATH/decidim-module-whiteboard.git"
+
+#gem "decidim-idra", git: "https://github.com/URBREATH/decidim-module-idra.git"
+
+gem "decidim-idra", path: "../decidim-module-idra"
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
