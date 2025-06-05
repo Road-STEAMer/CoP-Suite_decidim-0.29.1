@@ -30,6 +30,8 @@ gem "decidim-whiteboard", git: "https://github.com/URBREATH/decidim-module-white
 
 gem "decidim-idra", path: "../decidim-module-idra"
 
+gem "decidim-access_requests", path: "../decidim-module-access_requests"
+
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
 

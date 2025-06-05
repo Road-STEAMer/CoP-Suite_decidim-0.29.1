@@ -33,6 +33,14 @@ GIT
       decidim-core (= 0.29.1)
 
 PATH
+  remote: ../decidim-module-access_requests
+  specs:
+    decidim-access_requests (0.29.1)
+      decidim-admin (~> 0.29.1)
+      decidim-core (~> 0.29.1)
+      decidim-verifications (~> 0.29.1)
+
+PATH
   remote: ../decidim-module-idra
   specs:
     decidim-idra (0.29.1)
@@ -818,6 +826,7 @@ DEPENDENCIES
   brakeman (~> 6.1)
   byebug (~> 11.0)
   decidim (= 0.29.1)
+  decidim-access_requests!
   decidim-dev (= 0.29.1)
   decidim-idra!
   decidim-iframe!
