@@ -1,5 +1,9 @@
 ---
 en:
+  layouts:
+    decidim:
+     social_media_links:
+      linkedin: LinkedIn
   activemodel:
     models:
       decidim/comments/comment_by_followed_user_event: Comment

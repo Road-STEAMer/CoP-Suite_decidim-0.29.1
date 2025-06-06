@@ -1,0 +1,36 @@
+<ul class="flex md:justify-between md:justify-start gap-6 text-sm text-white hover:[&_a]:opacity-50">
+  <% if current_organization.twitter_handler.present? %>
+    <li>
+      <a target="_blank" data-external-link="text-only" rel="noopener noreferrer" href="https://x.com/STEAM_Europe">
+        <span class="sr-only"><%= t("layouts.decidim.social_media_links.x", organization: current_organization_name) %></span>
+        <%= icon "twitter-x-line", class: "w-8 h-8 fill-current", "aria-label": "X" %>
+      </a>
+    </li>
+  <% end %>
+  <% if current_organization.youtube_handler.present? %>
+    <li>
+      <a target="_blank" data-external-link="text-only" rel="noopener noreferrer" href="https://www.youtube.com/@STEAMeducationEurope">
+        <span class="sr-only"><%= t("layouts.decidim.social_media_links.youtube", organization: current_organization_name) %></span>
+        <%= icon "youtube-line", class: "w-8 h-8 fill-current", "aria-label": "YouTube" %>
+      </a>
+    </li>
+  <% end %>
+  <% if current_organization.github_handler.present? %>
+    <li>
+      <a target="_blank" data-external-link="text-only" rel="noopener noreferrer" href="https://github.com/Road-STEAMer/CoP-Suite">
+        <span class="sr-only"><%= t("layouts.decidim.social_media_links.github", organization: current_organization_name) %></span>
+        <%= icon "github-fill", class: "w-8 h-8 fill-current", "aria-label": "GitHub" %>
+      </a>
+    </li>
+  <% end %>
+
+  <li>
+      <a target="_blank" data-external-link="text-only" rel="noopener noreferrer" href="https://www.linkedin.com/groups/9239698/">
+        <span class="sr-only"><%= t("layouts.decidim.social_media_links.linkedin", organization: current_organization_name) %></span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M22.23 0H1.77C.792 0 0 .774 0 1.73v20.54C0 23.226.792 24 1.77 24h20.46C23.208 24 24 23.226 24 22.27V1.73C24 .774 23.208 0 22.23 0zM7.12 20.452H3.55V9.036h3.57v11.416zM5.34 7.512a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zm14.75 12.94h-3.57v-5.603c0-1.336-.024-3.054-1.86-3.054-1.862 0-2.147 1.453-2.147 2.957v5.7h-3.57V9.036h3.43v1.554h.05c.478-.906 1.645-1.86 3.385-1.86 3.618 0 4.288 2.38 4.288 5.47v6.252z"/>
+      </svg>
+      </li>
+      </a>
+    </li>
+</ul>
