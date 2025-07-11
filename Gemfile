@@ -27,7 +27,7 @@ gem "decidim-idra", git: "https://github.com/Road-STEAMer/decidim-module-idra.gi
 
 gem "decidim-access_requests", git: "https://github.com/Road-STEAMer/decidim-module-access_requests.git", branch: "v0.29.1"
 
-gem "decidim-decidim_awesome"
+#gem "decidim-decidim_awesome"
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
